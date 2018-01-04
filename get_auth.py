@@ -1,9 +1,9 @@
 #!/usr/bin/python
-from tweepy.auth import OAuthHandler
+from tweepy import OAuthHandler
 import tweepy
 
 def connect():
-    with open("auth/auth.txt", "r") as authFile:
+    with open("etc/auth/auth.txt", "r") as authFile:
         consumerKey = authFile.readline().strip()
         consumerSecret = authFile.readline().strip()
         accessKey = authFile.readline().strip()
