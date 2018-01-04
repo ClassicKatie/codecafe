@@ -1,0 +1,65 @@
+\documentclass{beamer}
+
+% \usepackage{beamerthemesplit} // Activate for custom appearance
+\usepackage{hyperref}
+
+\title{Twitter Bots}
+\author{Katie Ford}
+\date{\today}
+
+\begin{document}
+
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{Twitter Bots}
+\frame{
+	\frametitle{What is a Twitter Bot?}
+	\pause
+	A program that interacts with Twitter in an automated fashion
+}
+
+\section{APIs}
+\frame{
+	\frametitle{What is an API?}
+	\begin{itemize}
+		\item Stands for: Application Programming Interface
+		\item In short: A way for computers to share 'small' amounts of data
+	\end{itemize}
+}
+
+
+\section{Security}
+\frame{
+	\frametitle{OAuth}
+	\begin{center}
+	\hyperref[OAuth introduction]{https://oauth.net/about/introduction/}\\
+	\includegraphics[width=4cm]{oauth_explained.png}
+	\end{center}
+}
+\frame{
+	\frametitle{Auth files}
+	\begin{itemize}
+		\item /etc/auth directory
+		\item .gitignore
+	\end{itemize}
+}
+
+\section{cron jobs}
+\frame{
+	\frametitle{What is cron?}
+	cron is a time-based scheduler in a Unix-like computer operating system. It's a simple way to get your computer to regularly run scripts.\\
+}
+
+\frame{
+	\frametitle{cron alternatives}
+	\begin{itemize}
+		\item Windows Task Manager
+		\item launched (Macs)
+	\end{itemize}
+}
+
+\end{document}
