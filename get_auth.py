@@ -6,11 +6,13 @@ def connect():
     with open("etc/auth/auth.txt", "r") as authFile:
         consumerKey = authFile.readline().strip()
         consumerSecret = authFile.readline().strip()
-        accessKey = authFile.readline().strip()
-        accessToken = authFile.readline().strip()
-        twitter_auth = OAuthHandler(consumerKey, consumerSecret)
-        twitter_auth.set_access_token(accessKey, accessToken)
-        api = tweepy.API(twitter_auth)
+    with open("etc/auth/tokens.txt", "r") as tokenFile:
+        accessKey = tokenFile.readline().strip()
+        accessToken = tokenFile.readline().strip()
+    twitter_auth = OAuthHandler(consumerKey, consumerSecret)
+    twitter_auth.set_access_token(accessKey, accessToken)
+    api = tweepy.API(twitter_auth)
+    api.update_status(status=('Testing'))
     return api
 
 
@@ -27,7 +29,7 @@ def get_token():
 
     # go to this URL to authorize
     print("PLase visit this link and authorize the app ==> " + authUrl)
-    print ("Eneter the Authorization PIN")
+    print ("Enter the Authorization PIN")
 
     # Write the access tokens to file
     pin = input().strip() # strip the new line character from pressing 'enter'

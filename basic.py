@@ -13,7 +13,7 @@ def write(message):
     :return:
     """
     api = get_auth.connect()
-    api.update_status(message)
+    api.update_status(status=message)
     return
 
 
