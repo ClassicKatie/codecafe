@@ -12,7 +12,6 @@ def connect():
     twitter_auth = OAuthHandler(consumerKey, consumerSecret)
     twitter_auth.set_access_token(accessKey, accessToken)
     api = tweepy.API(twitter_auth)
-    api.update_status(status=('Testing'))
     return api
 
 
