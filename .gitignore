@@ -2,4 +2,7 @@ env
 *.pyc
 etc
 .idea
+*.aux
+*.log
+*.out
 
