@@ -5,4 +5,7 @@ etc
 *.aux
 *.log
 *.out
-
+*.synctex.gz
+*.toc
+*.nav
+*.snm
