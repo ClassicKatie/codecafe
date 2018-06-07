@@ -1,0 +1,7 @@
+git rebase -i HEAD~4
+	pick
+	delete
+	edit
+	reorder
+git cherry-pick
+git stash
