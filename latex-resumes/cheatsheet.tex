@@ -1,0 +1,53 @@
+\documentclass[12pt]{amsart}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{hyperref}
+\geometry{a4paper} % or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+\title{Code Caf\'e: \LaTeX Cheat Sheet}
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Cheat Sheet}
+\subsection{Universal commands}
+{\bf Headers} are created by the section commands. In this sheet, 'Cheat Sheet' is a section, 'Universal commands' is a subsection, and 'Headers' is a subsubsection.\\
+\begin{verbatim}
+\section{Section Title}
+\subsection{Subsection Title}
+\subsubsection{Subsubsection Title}
+\end{verbatim}
+And here is an itemization:
+\begin{itemize}
+	\item first thing
+	\item second thing
+	\item third thing
+\end{itemize}
+	
+\begin{verbatim}
+\begin{itemize}
+	\item a bullet
+	\item another bullet
+	\item yet again another bullet
+\end{itemize}
+\end{verbatim}
+
+To render something atomic (that is, indivisible), you simply enclose it in \{\}.  For example, to make a bolded item that you do not want to be broken up by automatic line breaks, you can enclose it.
+\begin{verbatim}{\bf Some Awesome Thing!}\end{verbatim}.
+
+
+\section{Links}
+\begin{itemize}
+	\item \href{http://mirror.hmc.edu/ctan/systems/protext/}{ProTeXt for Windows}
+	\item \href{http://www.tug.org/mactex/}{MacTeX}
+	\item \href{https://www.rpi.edu/dept/arc/training/latex/resumes/}{Resum\'e class, templates, and example}
+	\item \href{https://www.math.hmc.edu/computing/support/tex/}{HMC's LaTeX page}
+	\item \href{https://tex.stackexchange.com/questions/296616/questions-regarding-the-distinction-between-xetex-and-xelatex-and-how-they-relat/296623}{TeX, LaTeX, XeTeX, XeLaTeX, etc.}
+\end{itemize}
+
+\end{document}
